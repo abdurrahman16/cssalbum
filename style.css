@@ -1,0 +1,43 @@
+body{
+    background-color: teal;
+}
+.photo-frame {
+    border: 10px solid rgb(205, 94, 50);
+    border-radius: 10px;
+    width: 275px;
+    height: 250x;
+    position: relative;
+    margin: 10px;
+    overflow: hidden;
+
+}
+.photo-detail{
+    position: absolute;
+    width: 275px;
+    height: 200px;
+    top: 0px;
+    display: none;
+  
+
+}
+.photo-frame:hover .photo-detail{
+    display: block;
+    background-color: rgba(216, 191, 216, 0.226);
+}
+.photo-frame:hover h2{
+    color: white;
+    text-align: center;
+    background-color: black;
+}
+.photo-album{
+    flex-wrap: wrap;
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+   
+ 
+}
+.photo-frame:hover .photo img{
+   transform: skew(30deg);
+   transition: transform 2s;
+}
